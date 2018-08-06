@@ -1,0 +1,49 @@
+
+Basics
+
+1. Create a folder
+2. Navigate to that folder in terminal
+3.
+  'git init'
+  This will convert a local folder into a local git repository.
+4. Now add files, or create a project.
+5. There are 3 states in git.
+  a. Untracked (All modified files which are not added staging. Files in this state will not be committed.)
+  b. Staging (This state holds a copy of files that are ready to be committed. This copy will not be changed even if the original file is changed. To reflect the changes, you have to re-add them)
+  c. Commited (Committed means the local files are same as that of in the repo.)
+
+-----------------------------------------------------------------------
+
+Commit Types
+
+1. Checkout Commit: (safe)
+2. Revert Commit: (medium risk)
+3. Reset Commit: (dangerous)
+
+
+
+
+-----------------------------------------------------------------------
+Commands
+  a. 'git status'
+        Displays all files in Untracked & Staging area.
+  b. 'git add index.html'
+        Adds a specific file to Staging
+  c. 'git rm --cached index.html'
+        Removes a specific file from Staging
+  d. 'git add .'
+        Adds all Untracked files in the current folder to Staging
+  e. ' git commit -m "THis is a commit message" '
+        Commits all files in staging
+
+-----------------------------------------------------------------------
+
+  f. 'git checkout -- index.html'
+        Reverts an Untracked file to same copy in commited or staging.
+  g. 'git log'
+        Displays logs of all commits.
+  h. 'git log --oneline'
+        Displays short version of all logs
+
+
+
